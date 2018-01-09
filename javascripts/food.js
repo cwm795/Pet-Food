@@ -16,7 +16,7 @@ dogData.dog_brands.forEach( (brand, index) =>{
         brand.types.forEach( (brandType) => {
             $("#dogFood").append(`<h4>${brandType.type}</h4>`);
                 brandType.volumes.forEach( (vol) => {
-                    $dogFood.append('<h5>Size: ${vol.name} Price: $${vol.price}</h5>');
+                    $dogFood.append(`<h5> Size: ${vol.name} Price: $${vol.price}</h5>`);
              });
         });
     });
